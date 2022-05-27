@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#009999), to(#006699));
+  background-image: linear-gradient(#009999, #006699);
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  background: #003b42;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+header a,
+header button {
+  background: unset;
+  border: unset;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+header a span,
+header button span {
+  color: #bfbfbf;
+}
+
+header a h2,
+header a span,
+header button h2,
+header button span {
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.75);
+}
+
+header a:hover,
+header button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+header .nav-icon {
+  font-size: 2rem;
+}
+
+.message-container {
+  position: fixed;
+  top: 6rem;
+  right: 2rem;
+  padding: 1rem;
+  background: rgba(0, 97, 68, 0.5);
+  border: 2px solid #003b42;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.error {
+  background: rgba(231, 0, 0, 0.5);
+  border: 2px solid #920000;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main aside {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  background: #bfbfbf;
+  color: #003b42;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+
+main aside .sidebar-link-container .nav-icon {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+main aside .sidebar-link-container .nav-icon a {
+  color: #003b42;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+main aside .sidebar-link-container .nav-icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main .projects-container,
+main .easteregg-container,
+main .resume-container,
+main .project-demo-page-container,
+main .admin-container,
+main .login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  padding: 7rem 2rem 2rem 6rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1100px) {
+  main aside {
+    height: unset;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 0;
+  }
+  main aside .sidebar-link-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main aside .sidebar-link-container .nav-icon {
+    margin: 0.5rem 1rem 0 1rem;
+  }
+  main .projects-container,
+  main .easteregg-container,
+  main .resume-container,
+  main .project-demo-page-container,
+  main .admin-container,
+  main .login-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 100vh;
+    padding: 7rem 1rem 2rem 1rem;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=app.style.css.map */

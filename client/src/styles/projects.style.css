@@ -1,0 +1,168 @@
+.projects-container .project-demo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1500px;
+}
+
+.projects-container .project-demo-container .project-demo {
+  background: #bfbfbf;
+  border-radius: 15px;
+  max-width: 450px;
+  font-weight: bold;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  -webkit-box-shadow: 0 5px 15px #363636;
+          box-shadow: 0 5px 15px #363636;
+}
+
+.projects-container .project-demo-container .project-demo img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  max-height: 250px;
+  width: 100%;
+}
+
+.projects-container .project-demo-container .project-demo video {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.projects-container .project-demo-container .project-demo .project-info-container {
+  color: #030303;
+  padding: 0 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.projects-container .project-demo-container .project-demo .project-info-container h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.projects-container .project-demo-container .project-demo .project-info-container p {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.projects-container .project-demo-container .project-demo .project-info-container span {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  padding: 0 0.25rem;
+  background: #b80000;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 5px #363636;
+          box-shadow: 0 1px 5px #363636;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.projects-container .project-demo-container .project-demo .project-info-container span:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.projects-container .project-demo-container .project-demo .project-info-container span:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.projects-container .project-demo-container .project-demo .project-info-container .delete-disabled {
+  background: rgba(184, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.projects-container .project-demo-container .project-demo .project-info-container .delete-disabled:hover {
+  cursor: unset;
+  -webkit-transform: unset;
+          transform: unset;
+}
+
+.projects-container .project-demo-container .project-demo .project-technology-container {
+  border-top: 1px solid rgba(140, 140, 140, 0.61);
+  text-align: center;
+  max-width: 75%;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+}
+
+.projects-container .project-demo-container .project-demo .project-technology-container ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-container .project-demo-container .project-demo .project-technology-container ul li {
+  width: 2rem;
+}
+
+.projects-container .project-demo-container .project-demo .project-technology-container ul li img {
+  border-radius: unset;
+  width: 100%;
+}
+
+.projects-container .project-demo-container .project-demo .project-navigation-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.projects-container .project-demo-container .project-demo .project-navigation-container button {
+  background: none;
+  border-radius: 5px;
+  border: none;
+  background: #003b42;
+  color: white;
+  font-weight: bold;
+  padding: 0.7rem;
+  -webkit-box-shadow: 0 0 10px 1px rgba(54, 54, 54, 0.5);
+          box-shadow: 0 0 10px 1px rgba(54, 54, 54, 0.5);
+  cursor: pointer;
+}
+
+.projects-container .project-demo-container .project-demo .project-navigation-container button:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.projects-container .project-demo-container .project-demo .project-navigation-container button:active {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.projects-container .project-demo-container .project-demo .project-navigation-container .disabled {
+  cursor: unset;
+  color: rgba(54, 54, 54, 0.5);
+  border-color: rgba(54, 54, 54, 0.5);
+}
+
+.projects-container .project-demo-container .project-demo .project-navigation-container .disabled:hover {
+  -webkit-transform: unset;
+          transform: unset;
+}
+
+@media screen and (max-width: 1100px) {
+  .projects-container .project-demo-container .project-demo {
+    max-width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+/*# sourceMappingURL=projects.style.css.map */

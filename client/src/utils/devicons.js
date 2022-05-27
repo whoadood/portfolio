@@ -1,0 +1,17 @@
+export const devicons = {
+  html: "/assets/devicons/html5-original-wordmark.svg",
+  css: "/assets/devicons/css3-original-wordmark.svg",
+  javascript: "/assets/devicons/javascript-original.svg",
+  react: "/assets/devicons/react-original.svg",
+  express: "/assets/devicons/express-original-wordmark.svg",
+  node: "/assets/devicons/nodejs-plain.svg",
+  mongodb: "/assets/devicons/mongodb-original-wordmark.svg",
+  rpi: "/assets/devicons/raspberrypi-original.svg",
+  sass: "/assets/devicons/sass-original.svg",
+  heroku: "/assets/devicons/heroku-original-wordmark.svg",
+  next: "/assets/devicons/nextjs-original-wordmark.svg",
+  typescript: "/assets/devicons/typescript-original.svg",
+  materialui: "/assets/devicons/materialui-original.svg",
+  tailwind: "/assets/devicons/tailwindcss-plain.svg",
+  postgres: "/assets/devicons/postgresql-original.svg",
+};
