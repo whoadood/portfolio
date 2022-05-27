@@ -31,7 +31,7 @@ app.use(morgan("dev"));
 // app.use(helmet());
 app.use(
   cors({
-    origin: "https://gsdevportfolio.herokuapp.com",
+    origin: "https://gsdevportfolio.netlify.app",
   })
 );
 
