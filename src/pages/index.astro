@@ -2,8 +2,14 @@
 import Base from "../layouts/Base.astro";
 import Hero from "../components/Hero.astro";
 import Divider from "../components/Divider.astro";
+import Stats from "../components/Stats.astro";
 ---
 
-<Base pageTitle="Home page"
-  ><div class="bg-violet-400"><Hero /><Divider /></div>
+<Base pageTitle="Home page">
+  <div class="bg-gray-800">
+    <Hero />
+    <Stats />
+    <Divider />
+    <div class="bg-violet-200 text-gray-900">hello</div>
+  </div>
 </Base>
