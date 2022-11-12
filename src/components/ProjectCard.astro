@@ -1,0 +1,7 @@
+---
+import type { MarkdownInstance } from "astro";
+type Props = { project: MarkdownInstance<Record<string, any>> };
+const { project } = Astro.props;
+---
+
+<a href={project.url}>{project.frontmatter.title}</a>

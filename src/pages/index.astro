@@ -3,19 +3,32 @@ import Base from "../layouts/Base.astro";
 import Hero from "../components/Hero.astro";
 import Divider from "../components/Divider.astro";
 import Stats from "../components/Stats.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+
+const allProjects = await Astro.glob("../pages/projects/*.md");
 ---
 
 <Base pageTitle="Home page">
   <div class="bg-gray-800">
-    <div class="container z-50 bg-none">
+    <div class="pt-8">
       <Hero />
     </div>
     <Stats />
     <Divider />
     <div
-      class="bg-gray-600/50 bg-blend-overlay bg-[url('/recipeater-architecture-v2.png')] bg-cover bg-start text-white"
+      class="bg-gray-800/50 bg-blend-overlay bg-[url('/slicewars.svg')] min-h-screen bg-cover bg-start text-white"
     >
-      hello
+      <div class="max-w-7xl mx-auto">
+        <ul>
+          {
+            allProjects.map((project) => (
+              <li>
+                <ProjectCard project={project} />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </div>
   </div>
 </Base>
@@ -32,15 +45,29 @@ import Stats from "../components/Stats.astro";
     let yOffset = (e as MouseEvent).offsetY;
     let cardHeight = card?.clientHeight;
     let cardWidth = card?.clientWidth;
+    let containerHeight = container?.clientHeight;
+    let containerWidth = container?.clientWidth;
+    let containerWidthCenter = Math.round(containerWidth / 2);
+    let containerHeightCenter = Math.round(containerHeight / 2);
     let heightCenter = Math.round(cardHeight! / 2);
     let widthCenter = Math.round(cardWidth! / 2);
-    let rotateBaseValue = 15;
+    let rotateBaseValue = 20;
     let rotateXValue =
       ((yOffset - heightCenter) / heightCenter) * rotateBaseValue;
     let rotateYValue =
       ((widthCenter - xOffset) / widthCenter) * rotateBaseValue;
+    const posOrNeg = (center: number, rotate: number) => {
+      if (center > rotate) {
+        return -1 * rotate;
+      } else if (center <= rotate) {
+        return rotate;
+      }
+    };
 
-    card!.style.transform = ` rotateX(${rotateXValue}deg) rotateY(${rotateYValue}deg)`;
+    card!.style.transform = ` rotateX(${posOrNeg(
+      containerWidthCenter,
+      rotateXValue
+    )}deg) rotateY(${posOrNeg(containerHeightCenter, rotateYValue)}deg)`;
   });
 
   container?.addEventListener("mouseout", (e) => {
