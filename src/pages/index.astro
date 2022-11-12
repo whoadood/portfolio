@@ -13,7 +13,7 @@ import Stats from "../components/Stats.astro";
     <Stats />
     <Divider />
     <div
-      class="bg-gray-800/50 bg-blend-overlay bg-[url('/recipeater-architecture-v2.png')] bg-cover bg-start text-white"
+      class="bg-gray-600/50 bg-blend-overlay bg-[url('/recipeater-architecture-v2.png')] bg-cover bg-start text-white"
     >
       hello
     </div>
@@ -23,13 +23,13 @@ import Stats from "../components/Stats.astro";
 <!-- ********** revisit ********** -->
 <script>
   const container = document.querySelector(".container");
-  const card = document.querySelector(".card");
+  const card: HTMLDivElement | null = document.querySelector(".card");
   let x = document.querySelector(".x-axis");
   let y = document.querySelector(".y-axis");
 
   container?.addEventListener("mousemove", (e) => {
-    let xOffset = e.offsetX;
-    let yOffset = e.offsetY;
+    let xOffset = (e as MouseEvent).offsetX;
+    let yOffset = (e as MouseEvent).offsetY;
     let cardHeight = card?.clientHeight;
     let cardWidth = card?.clientWidth;
     let heightCenter = Math.round(cardHeight! / 2);
@@ -40,10 +40,10 @@ import Stats from "../components/Stats.astro";
     let rotateYValue =
       ((widthCenter - xOffset) / widthCenter) * rotateBaseValue;
 
-    card.style.transform = ` rotateX(${rotateXValue}deg) rotateY(${rotateYValue}deg)`;
+    card!.style.transform = ` rotateX(${rotateXValue}deg) rotateY(${rotateYValue}deg)`;
   });
 
   container?.addEventListener("mouseout", (e) => {
-    card.style.transform = "";
+    card!.style.transform = "";
   });
 </script>
