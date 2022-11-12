@@ -1,0 +1,9 @@
+---
+type Props = {
+  url: string;
+  title: string;
+};
+const { url, title } = Astro.props;
+---
+
+<img src={url} title={title} width="40" height="40" />

@@ -7,5 +7,5 @@ export type Frontmatter = {
     alt: string;
   };
   background: string;
-  tech: string[];
+  tech: { title: string; url: string }[];
 };

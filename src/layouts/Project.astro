@@ -1,6 +1,7 @@
 ---
 import Base from "./Base.astro";
 import type { Frontmatter } from "../types";
+import TechIcon from "../components/TechIcon.astro";
 
 type Props = {
   frontmatter: Frontmatter;
@@ -10,21 +11,21 @@ const bgColor = frontmatter.background;
 ---
 
 <Base pageTitle={frontmatter.title}>
-  <div class="min-h-screen relative overflow-hidden text-white bg-gray-800/80">
-    <div class="z-20 max-w-2xl mx-auto">
-      <h2>{frontmatter.title}</h2>
+  <div
+    class="min-h-screen relative overflow-hidden text-violet-100 bg-gray-800/90 py-8"
+  >
+    <div class="z-20 max-w-2xl px-4 mx-auto">
+      <h2 class="text-4xl font-bold text-white">{frontmatter.title}</h2>
       <p><em>{frontmatter.description}</em></p>
       <img
         src={frontmatter.image.url}
         width="300"
         alt={frontmatter.image.alt}
       />
-      <div class="tags">
+      <div class="tags flex py-2 gap-2">
         {
-          frontmatter.tech.map((tag: string) => (
-            <p class="tag">
-              <a href={`/tags/${tag}`}>{tag}</a>
-            </p>
+          frontmatter.tech.map((tag) => (
+            <TechIcon title={tag.title} url={tag.url} />
           ))
         }
       </div>
@@ -32,7 +33,7 @@ const bgColor = frontmatter.background;
     </div>
     <img
       src={bgColor}
-      class="absolute top-0 right-0 left-0 bottom-0 object-fit -z-10"
+      class="absolute mx-auto top-0 right-0 left-0 bottom-0 object-fit -z-10"
     />
   </div>
 </Base>

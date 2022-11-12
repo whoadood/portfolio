@@ -9,7 +9,25 @@ image:
     alt: "The Astro logo with the word One.",
   }
 background: "https://user-images.githubusercontent.com/82413454/192639718-ddf91d67-005e-46eb-bb11-57e5191b9f39.png"
-tech: ["astro", "blogging", "learning in public"]
+tech:
+  [
+    {
+      title: NextJS,
+      url: "https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original-wordmark.svg",
+    },
+    {
+      title: TypeScript,
+      url: "https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg",
+    },
+    {
+      title: tRPC,
+      url: "https://user-images.githubusercontent.com/82413454/191451583-210c833a-671e-4103-93fd-1004215e39f4.png",
+    },
+    {
+      title: TailwindCSS,
+      url: "https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg",
+    },
+  ]
 ---
 
 ![pizzatime](https://user-images.githubusercontent.com/82413454/192655528-6af22c8b-0303-4e1b-a18b-8db126ed0e45.jpeg)
