@@ -7,9 +7,43 @@ import Stats from "../components/Stats.astro";
 
 <Base pageTitle="Home page">
   <div class="bg-gray-800">
-    <Hero />
+    <div class="container z-50 bg-none">
+      <Hero />
+    </div>
     <Stats />
     <Divider />
-    <div class="bg-violet-200 text-gray-900">hello</div>
+    <div
+      class="bg-gray-800/50 bg-blend-overlay bg-[url('/recipeater-architecture-v2.png')] bg-cover bg-start text-white"
+    >
+      hello
+    </div>
   </div>
 </Base>
+
+<!-- ********** revisit ********** -->
+<script>
+  const container = document.querySelector(".container");
+  const card = document.querySelector(".card");
+  let x = document.querySelector(".x-axis");
+  let y = document.querySelector(".y-axis");
+
+  container?.addEventListener("mousemove", (e) => {
+    let xOffset = e.offsetX;
+    let yOffset = e.offsetY;
+    let cardHeight = card?.clientHeight;
+    let cardWidth = card?.clientWidth;
+    let heightCenter = Math.round(cardHeight! / 2);
+    let widthCenter = Math.round(cardWidth! / 2);
+    let rotateBaseValue = 15;
+    let rotateXValue =
+      ((yOffset - heightCenter) / heightCenter) * rotateBaseValue;
+    let rotateYValue =
+      ((widthCenter - xOffset) / widthCenter) * rotateBaseValue;
+
+    card.style.transform = ` rotateX(${rotateXValue}deg) rotateY(${rotateYValue}deg)`;
+  });
+
+  container?.addEventListener("mouseout", (e) => {
+    card.style.transform = "";
+  });
+</script>
