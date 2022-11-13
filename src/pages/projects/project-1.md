@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/Project.astro
 title: "Slicewars"
-description: "This is the first post of my new Astro blog."
+description: "Vote on your favorite local pizza shops"
 githubUrl: "https://github.com/whoadoo/slicewars"
 image:
   {
