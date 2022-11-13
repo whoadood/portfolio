@@ -18,8 +18,8 @@ const allProjects = await Astro.glob("../pages/projects/*.md");
     <div
       class="bg-gray-800/50 bg-blend-overlay bg-[url('/slicewars.svg')] min-h-screen bg-cover bg-start text-white"
     >
-      <div class="max-w-7xl mx-auto">
-        <ul>
+      <div class="max-w-7xl mx-auto py-16">
+        <ul class="flex flex-col gap-16">
           {
             allProjects.map((project) => (
               <li>

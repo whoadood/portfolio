@@ -4,4 +4,31 @@ type Props = { project: MarkdownInstance<Record<string, any>> };
 const { project } = Astro.props;
 ---
 
-<a href={project.url}>{project.frontmatter.title}</a>
+<div class="max-w-4xl mx-auto">
+  <div
+    class="rounded-t flex justify-between bg-violet-200 px-2 py-4 items-center"
+  >
+    <div>
+      <div>
+        <h3 class="font-bold text-violet-900">
+          {project.frontmatter.title}
+        </h3>
+        <p class="text-gray-800">{project.frontmatter.description}</p>
+      </div>
+    </div>
+    <div>
+      <a
+        class="bg-violet-800 hover:bg-violet-900 cursor-pointer text-white p-2 rounded text-md border-2 border-violet-800 shadow-violet-900"
+        >View Live</a
+      >
+      <a
+        href={project.url}
+        class="border-violet-900 border-2 hover:bg-violet-300 cursor-pointer text-violet-900 p-2 rounded text-md shadow"
+        >Learn More</a
+      >
+    </div>
+  </div>
+  <div>
+    <img class="w-full card rounded-b" src={project.frontmatter?.image?.url} />
+  </div>
+</div>

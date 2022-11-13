@@ -7,20 +7,20 @@ type Props = {
   frontmatter: Frontmatter;
 };
 const { frontmatter } = Astro.props;
-const bgColor = frontmatter.background;
+const bgColor = frontmatter.background || "/slicewars.svg";
 ---
 
 <Base pageTitle={frontmatter.title}>
   <div
     class="min-h-screen relative overflow-hidden text-violet-100 bg-gray-800/90 py-8"
   >
-    <div class="z-20 max-w-2xl px-4 mx-auto">
+    <div class="max-w-2xl px-4 z-50 mx-auto">
       <h2 class="text-4xl font-bold text-white">{frontmatter.title}</h2>
       <p><em>{frontmatter.description}</em></p>
       <img
-        src={frontmatter.image.url}
+        src={frontmatter?.image?.url}
         width="300"
-        alt={frontmatter.image.alt}
+        alt={frontmatter?.image?.alt}
       />
       <div class="tags flex py-2 gap-2">
         {
@@ -33,7 +33,7 @@ const bgColor = frontmatter.background;
     </div>
     <img
       src={bgColor}
-      class="absolute mx-auto top-0 right-0 left-0 bottom-0 object-fit -z-10"
+      class="absolute -z-10 mx-auto top-0 right-0 left-0 bottom-0 object-fit"
     />
   </div>
 </Base>
