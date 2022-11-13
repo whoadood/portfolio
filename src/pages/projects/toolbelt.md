@@ -5,8 +5,8 @@ description: "Drag and drop pomodoro productivity application."
 githubUrl: "https://github.com/whoadoo/toolbelt"
 image:
   {
-    url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg",
-    alt: "The Astro logo with the word One.",
+    url: "https://user-images.githubusercontent.com/82413454/201543799-da68af16-5835-4624-87f1-5dbdb9ede7c9.png",
+    alt: "Toolbelt demo image",
   }
 tech:
   [

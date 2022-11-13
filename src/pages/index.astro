@@ -4,8 +4,12 @@ import Hero from "../components/Hero.astro";
 import Divider from "../components/Divider.astro";
 import Stats from "../components/Stats.astro";
 import ProjectCard from "../components/ProjectCard.astro";
+import type { MarkdownInstance } from "astro";
+import type { Frontmatter } from "../types";
 
-const allProjects = await Astro.glob("../pages/projects/*.md");
+const allProjects: MarkdownInstance<Frontmatter>[] = await Astro.glob(
+  "../pages/projects/*.md"
+);
 ---
 
 <Base pageTitle="Home page">

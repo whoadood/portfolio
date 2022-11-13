@@ -1,6 +1,7 @@
 ---
-import type { MarkdownInstance } from "astro";
-type Props = { project: MarkdownInstance<Record<string, any>> };
+import type { MarkdownInstance, MarkdownLayoutProps } from "astro";
+import type { Frontmatter } from "../types";
+type Props = { project: MarkdownInstance<Frontmatter> };
 const { project } = Astro.props;
 ---
 

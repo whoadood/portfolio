@@ -5,8 +5,8 @@ description: "Vote on your favorite local pizza shops"
 githubUrl: "https://github.com/whoadoo/slicewars"
 image:
   {
-    url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg",
-    alt: "The Astro logo with the word One.",
+    url: "https://user-images.githubusercontent.com/82413454/201543802-b8f063d8-cf8f-401c-92af-1b1bb377efa7.png",
+    alt: "Slicewars Demo image",
   }
 background: "https://user-images.githubusercontent.com/82413454/192639718-ddf91d67-005e-46eb-bb11-57e5191b9f39.png"
 tech:

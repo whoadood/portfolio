@@ -5,8 +5,8 @@ description: "Cli tool for quickly generating a readme file."
 githubUrl: "https://github.com/whoadoo/drmb"
 image:
   {
-    url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg",
-    alt: "The Astro logo with the word One.",
+    url: "https://user-images.githubusercontent.com/82413454/201543806-ab3ee2db-6895-4419-9807-b88f79e1fa71.png",
+    alt: "DRMB demo image",
   }
 tech:
   [
