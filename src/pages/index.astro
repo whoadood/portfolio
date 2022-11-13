@@ -20,7 +20,7 @@ const allProjects: MarkdownInstance<Frontmatter>[] = await Astro.glob(
     <Stats />
     <Divider />
     <div
-      class="bg-gray-800/50 bg-blend-overlay bg-[url('/slicewars.svg')] min-h-screen bg-cover bg-start text-white"
+      class="bg-gray-800/50 bg-blend-overlay bg-fixed bg-[url('/slicewars.svg')] min-h-screen bg-cover bg-start text-white"
     >
       <div class="max-w-7xl mx-auto px-4 py-16">
         <ul class="flex flex-col gap-16">
@@ -68,7 +68,7 @@ const allProjects: MarkdownInstance<Frontmatter>[] = await Astro.glob(
       }
     };
 
-    card!.style.transform = ` rotateX(${posOrNeg(
+    card!.style.transform = `scale(1.1) rotateX(${posOrNeg(
       containerWidthCenter,
       rotateXValue
     )}deg) rotateY(${posOrNeg(containerHeightCenter, rotateYValue)}deg)`;

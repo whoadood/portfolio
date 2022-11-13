@@ -11,10 +11,10 @@ const bgColor = frontmatter.background || "/slicewars.svg";
 
 <Base pageTitle={frontmatter.title}>
   <div
-    class="min-h-screen relative overflow-hidden text-violet-100 bg-gray-800/90 py-8"
+    class="min-h-screen bg-[url('/slicewars.svg')] bg-blend-overlay bg-cover bg-fixed bg-center text-violet-100 bg-gray-800/90 py-8"
   >
     <div class="max-w-2xl px-4 z-50 mx-auto">
-      <h2 class="text-8xl text-center font-bold text-white">
+      <h2 class="text-4xl sm:text-6xl text-center font-bold text-white">
         {frontmatter.title}
       </h2>
       <p class="text-center text-xl"><em>{frontmatter.description}</em></p>
@@ -34,10 +34,11 @@ const bgColor = frontmatter.background || "/slicewars.svg";
         <slot />
       </div>
     </div>
-    <img
+    <!-- Dyanamic bg image doesnt seem to work -- janky solution -->
+    <!-- <img
       src={bgColor}
       class="absolute -z-10 mx-auto top-0 right-0 left-0 bottom-0 object-fit"
-    />
+    /> -->
   </div>
 </Base>
 <style is:global>
