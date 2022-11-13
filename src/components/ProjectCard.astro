@@ -29,10 +29,7 @@ const { project } = Astro.props;
       >
     </div>
   </div>
-  <div class="max-h-400 rounded-b bg-black/50 overflow-hidden">
-    <img
-      class="card object-fit mx-auto"
-      src={project.frontmatter?.image?.url}
-    />
+  <div class="max-h-[400px] rounded-b bg-black/50 overflow-hidden">
+    <img class="card mx-auto" src={project.frontmatter?.image?.url} />
   </div>
 </div>
