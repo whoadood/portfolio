@@ -1,11 +1,17 @@
 ---
 import Header from "./Header.astro";
+import Socails from "./Socails.astro";
 ---
 
-<footer class="">
-  <div class="px-6 py-4 bg-violet-900 text-violet-200">
+<footer
+  class="flex flex-col sm:flex-row justify-between items-center bg-violet-800 px-6 py-2"
+>
+  <div class="text-violet-200">
     <p>
       &copy; 2022 Gerard Strecker | Full Stack Engineering. All rights reserved.
     </p>
+  </div>
+  <div class="flex">
+    <Socails />
   </div>
 </footer>

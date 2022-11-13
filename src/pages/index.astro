@@ -22,7 +22,7 @@ const allProjects: MarkdownInstance<Frontmatter>[] = await Astro.glob(
     <div
       class="bg-gray-800/50 bg-blend-overlay bg-[url('/slicewars.svg')] min-h-screen bg-cover bg-start text-white"
     >
-      <div class="max-w-7xl mx-auto py-16">
+      <div class="max-w-7xl mx-auto px-4 py-16">
         <ul class="flex flex-col gap-16">
           {
             allProjects.map((project) => (

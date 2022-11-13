@@ -2,6 +2,7 @@ export type Frontmatter = {
   layout: string;
   title: string;
   description: string;
+  live: string;
   githubUrl: string;
   image?: {
     url: string;

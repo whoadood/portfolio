@@ -2,6 +2,7 @@
 layout: ../../layouts/Project.astro
 title: "Dont Read Me Bro"
 description: "Cli tool for quickly generating a readme file."
+live: "https://www.npmjs.com/package/drmb"
 githubUrl: "https://github.com/whoadoo/drmb"
 image:
   {
