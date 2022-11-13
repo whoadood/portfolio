@@ -15,21 +15,26 @@ const bgColor = frontmatter.background || "/slicewars.svg";
     class="min-h-screen relative overflow-hidden text-violet-100 bg-gray-800/90 py-8"
   >
     <div class="max-w-2xl px-4 z-50 mx-auto">
-      <h2 class="text-4xl font-bold text-white">{frontmatter.title}</h2>
-      <p><em>{frontmatter.description}</em></p>
+      <h2 class="text-8xl text-center font-bold text-white">
+        {frontmatter.title}
+      </h2>
+      <p class="text-center text-xl"><em>{frontmatter.description}</em></p>
       <img
+        class="mx-auto my-4"
         src={frontmatter?.image?.url}
         width="300"
         alt={frontmatter?.image?.alt}
       />
-      <div class="tags flex py-2 gap-2">
+      <div class="tags flex items-center mb-4 justify-center py-2 gap-2">
         {
           frontmatter.tech.map((tag) => (
             <TechIcon title={tag.title} url={tag.url} />
           ))
         }
       </div>
-      <slot />
+      <div class="poppop flex flex-col gap-4">
+        <slot />
+      </div>
     </div>
     <img
       src={bgColor}
@@ -37,3 +42,19 @@ const bgColor = frontmatter.background || "/slicewars.svg";
     />
   </div>
 </Base>
+<style is:global>
+  .poppop h1,
+  .poppop h2,
+  .poppop h3 {
+    font-weight: bold;
+  }
+  .poppop h1 {
+    font-size: 3rem;
+  }
+  .poppop h2 {
+    font-size: 2rem;
+  }
+  .poppop p {
+    font-size: 1.2rem;
+  }
+</style>

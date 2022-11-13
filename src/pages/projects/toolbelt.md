@@ -12,15 +12,15 @@ tech:
   [
     {
       title: React,
-      url: "https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg",
+      url: "https://user-images.githubusercontent.com/82413454/201538305-478bcc0b-8d60-4989-ac43-376836060306.svg",
     },
     {
       title: TypeScript,
-      url: "https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg",
+      url: "https://user-images.githubusercontent.com/82413454/201538286-f5eec681-c586-4fbb-90d8-b5037cfd2bed.svg",
     },
     {
       title: TailwindCSS,
-      url: "https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg",
+      url: "https://user-images.githubusercontent.com/82413454/201538300-3f2d9faf-41ee-4ae5-b4af-c934e13e143d.svg",
     },
   ]
 ---

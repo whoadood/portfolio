@@ -13,11 +13,11 @@ tech:
   [
     {
       title: NextJS,
-      url: "https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original-wordmark.svg",
+      url: "https://user-images.githubusercontent.com/82413454/201538333-c8ae76a8-799b-42df-a71e-8dcc5b1b9617.svg",
     },
     {
       title: TypeScript,
-      url: "https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg",
+      url: "https://user-images.githubusercontent.com/82413454/201538286-f5eec681-c586-4fbb-90d8-b5037cfd2bed.svg",
     },
     {
       title: tRPC,
@@ -25,7 +25,7 @@ tech:
     },
     {
       title: TailwindCSS,
-      url: "https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg",
+      url: "https://user-images.githubusercontent.com/82413454/201538300-3f2d9faf-41ee-4ae5-b4af-c934e13e143d.svg",
     },
   ]
 ---
