@@ -1,4 +1,121 @@
-<div
-  class="h-12 overflow-hidden bg-[url('/flat-mountains.svg')] bg-cover bg-bottom"
->
+---
+import TechIcon from "./TechIcon.astro";
+const tech = [
+  {
+    title: "NodeJS",
+    url: "https://user-images.githubusercontent.com/82413454/201538353-5621b947-de71-4193-807c-67b55e44166e.svg",
+  },
+  {
+    title: "TypeScript",
+    url: "https://user-images.githubusercontent.com/82413454/201538286-f5eec681-c586-4fbb-90d8-b5037cfd2bed.svg",
+  },
+  {
+    title: "NPM",
+    url: "https://user-images.githubusercontent.com/82413454/201538380-39242308-f3af-4c54-80bb-6a360e5eb71d.svg",
+  },
+  {
+    title: "NextJS",
+    url: "https://user-images.githubusercontent.com/82413454/201538333-c8ae76a8-799b-42df-a71e-8dcc5b1b9617.svg",
+  },
+  {
+    title: "tRPC",
+    url: "https://user-images.githubusercontent.com/82413454/191451583-210c833a-671e-4103-93fd-1004215e39f4.png",
+  },
+  {
+    title: "TailwindCSS",
+    url: "https://user-images.githubusercontent.com/82413454/201538300-3f2d9faf-41ee-4ae5-b4af-c934e13e143d.svg",
+  },
+  {
+    title: "React",
+    url: "https://user-images.githubusercontent.com/82413454/201538305-478bcc0b-8d60-4989-ac43-376836060306.svg",
+  },
+  {
+    title: "HTML5",
+    url: "https://user-images.githubusercontent.com/82413454/201538165-15fab99b-3afa-4a53-a8c0-fe86aa3e9221.svg",
+  },
+  {
+    title: "CSS3",
+    url: "https://user-images.githubusercontent.com/82413454/201538256-f7674c3e-ab32-42a3-b576-5f68ab5f565b.svg",
+  },
+  {
+    title: "JavaScript",
+    url: "https://user-images.githubusercontent.com/82413454/201538269-6b3d612d-43d3-46e2-b0c9-d3d6291d585f.svg",
+  },
+  {
+    title: "Sass",
+    url: "https://user-images.githubusercontent.com/82413454/201538297-9a37fc5b-d2fb-478c-a6a8-a75a62fb170b.svg",
+  },
+  {
+    title: "Express",
+    url: "https://user-images.githubusercontent.com/82413454/201538361-c6fee368-8e02-48e0-babf-a2e4f64c7f11.svg",
+  },
+  // {
+  //   title: "MongoDB",
+  //   url: "https://user-images.githubusercontent.com/82413454/201538361-c6fee368-8e02-48e0-babf-a2e4f64c7f11.svg",
+  // },
+  {
+    title: "PostgresQL",
+    url: "https://user-images.githubusercontent.com/82413454/201538373-fa4f1d13-42ab-4bec-8866-e842ab1c073e.svg",
+  },
+  {
+    title: "Tanstack-Query",
+    url: "https://user-images.githubusercontent.com/82413454/191467680-fa1fe08e-8ae4-49ff-bdac-2772e2e0d3a7.svg",
+  },
+  {
+    title: "Prisma",
+    url: "https://user-images.githubusercontent.com/82413454/191468427-0e2a965a-a88f-4021-96a8-5a608a520d99.svg",
+  },
+  {
+    title: "PassportJS",
+    url: "https://user-images.githubusercontent.com/82413454/191476444-ceefeca8-640b-4951-bca2-ef97a340f573.png",
+  },
+  {
+    title: "Next-Auth",
+    url: "https://user-images.githubusercontent.com/82413454/191476111-8abe4be0-82b2-471b-bd4f-30a1eaef0375.png",
+  },
+  {
+    title: "Postman",
+    url: "https://user-images.githubusercontent.com/82413454/191562800-3002aa0e-db83-4af2-83d1-7ccbc8acf6dc.png",
+  },
+  {
+    title: "Railway",
+    url: "https://user-images.githubusercontent.com/82413454/194641725-d2422aea-1b39-4d87-870a-59c9685fcdd3.png",
+  },
+  {
+    title: "Vercel",
+    url: "https://user-images.githubusercontent.com/82413454/191465072-df998bdb-d0ab-4e65-9e36-c8d55af2b122.png",
+  },
+  {
+    title: "Netlify",
+    url: "https://user-images.githubusercontent.com/82413454/191464749-4bd02ee4-030e-494d-a62f-0e5343b6753e.png",
+  },
+  // {
+  //   title: "",
+  //   url: "",
+  // },
+  // {
+  //   title: "",
+  //   url: "",
+  // },
+  // {
+  //   title: "",
+  //   url: "",
+  // },
+  // {
+  //   title: "",
+  //   url: "",
+  // },
+  // {
+  //   title: "",
+  //   url: "",
+  // },
+];
+---
+
+<div class="overflow-hidden bg-[url('/flat-mountains.svg')] bg-cover bg-bottom">
+  <div
+    class="flex flex-wrap max-w-4xl mx-auto items-center justify-center gap-4 py-4"
+  >
+    {tech.map((t) => <TechIcon url={t.url} title={t.title} />)}
+  </div>
 </div>
