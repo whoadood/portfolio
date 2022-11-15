@@ -6,7 +6,12 @@ import StatCard from "./StatCard.astro";
   <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
     <StatCard
       title="Skills"
-      text="Always learning and sharing skills I've added to my toolbelt"
+      skills={[
+        "Responsive, intuitive user interfaces",
+        "Scalable, maintainable API design architecture",
+        "Client, API and database hosting",
+        "Organized whiteboard prototyping",
+      ]}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +30,9 @@ import StatCard from "./StatCard.astro";
     </StatCard>
     <StatCard
       title="Tools"
-      text="Robust modern tech stacks for quick, clean and maintainable code"
+      skills={[
+        "Robust modern tech stacks for quick, clean and maintainable code",
+      ]}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +51,7 @@ import StatCard from "./StatCard.astro";
     </StatCard>
     <StatCard
       title="Fundamentals"
-      text="Scalable architecture for lasting foundations"
+      skills={["Scalable architecture for lasting foundations"]}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

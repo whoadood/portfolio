@@ -2,9 +2,9 @@
 type Props = {
   svg?: any;
   title: string;
-  text: string;
+  skills: string[];
 };
-const { svg, title, text } = Astro.props;
+const { svg, title, skills } = Astro.props;
 ---
 
 <div
@@ -16,7 +16,15 @@ const { svg, title, text } = Astro.props;
     </div>
   </div>
   <p class="text-2xl font-semibold text-gray-900 mb-2">{title}</p>
-  <p class="text-sm font-medium text-gray-500">
-    {text}
-  </p>
+  <ul class="text-sm font-medium flex flex-col gap-3 text-gray-500">
+    {
+      skills.map((skill) => {
+        return (
+          <li class="text-left list-disc text-violet-800">
+            <span class="text-gray-600">{skill}</span>
+          </li>
+        );
+      })
+    }
+  </ul>
 </div>
