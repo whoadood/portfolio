@@ -7,7 +7,7 @@ githubUrl: "https://github.com/whoadoo/recipeater"
 image:
   {
     url: "https://user-images.githubusercontent.com/82413454/201937581-475387a0-4527-4711-a2cc-782c7a2b7d61.png",
-    alt: "The Astro logo with the word One.",
+    alt: "Recipeater demo image",
   }
 tech:
   [
