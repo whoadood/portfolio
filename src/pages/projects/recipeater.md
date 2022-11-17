@@ -34,9 +34,6 @@ tech:
 <br />
 
 <div align="center">
-  <a href="https://github.com/whoadood/recipeater">
-    <img src="https://user-images.githubusercontent.com/82413454/201942312-be0d1107-4175-49f7-923f-1d17029069aa.png" alt="drmb logo">
-  </a>
 
 <strong>recipeater</strong>
 
