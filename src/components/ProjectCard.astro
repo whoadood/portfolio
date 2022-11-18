@@ -21,11 +21,13 @@ const { project } = Astro.props;
       <a
         href={project.frontmatter.live}
         target="_blank"
+        aria-label={`view ${project.frontmatter.title} live`}
         class="bg-violet-800 hover:bg-violet-900 cursor-pointer text-white p-2 rounded text-md border-2 border-violet-800 shadow-violet-900"
         >View Live</a
       >
       <a
         href={project.url}
+        aria-label={`learn more about ${project.frontmatter.title}`}
         class="border-violet-900 border-2 hover:bg-violet-300 cursor-pointer text-violet-900 p-2 rounded text-md shadow"
         >Learn More</a
       >
