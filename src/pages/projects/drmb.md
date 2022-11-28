@@ -6,7 +6,7 @@ live: "https://www.npmjs.com/package/drmb"
 githubUrl: "https://github.com/whoadoo/drmb"
 image:
   {
-    url: "https://user-images.githubusercontent.com/82413454/201543806-ab3ee2db-6895-4419-9807-b88f79e1fa71.png",
+    url: "https://user-images.githubusercontent.com/82413454/204176279-2f3702c1-a8b5-42ae-a9ad-c154d89e9f8f.png",
     alt: "DRMB demo image",
   }
 tech:
