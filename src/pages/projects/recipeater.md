@@ -3,7 +3,7 @@ layout: ../../layouts/Project.astro
 title: "Recipeater"
 description: "Create, save and revisit all your favorite recipes with ease."
 live: "https://recipeater.vercel.app/"
-githubUrl: "https://github.com/whoadoo/recipeater"
+githubUrl: "https://github.com/whoadood/recipeater"
 image:
   {
     url: "https://user-images.githubusercontent.com/82413454/201937581-475387a0-4527-4711-a2cc-782c7a2b7d61.png",

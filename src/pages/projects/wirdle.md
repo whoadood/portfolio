@@ -3,7 +3,7 @@ layout: ../../layouts/Project.astro
 title: "Wirdle"
 description: "Cli game wordl clone"
 live: "https://www.npmjs.com/package/wirdle"
-githubUrl: "https://github.com/whoadoo/wirdle"
+githubUrl: "https://github.com/whoadood/wirdle"
 image:
   {
     url: "https://user-images.githubusercontent.com/82413454/199623165-0ee9953b-698f-4d87-87c1-9cf8e0948758.png",

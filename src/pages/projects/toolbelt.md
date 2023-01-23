@@ -3,7 +3,7 @@ layout: ../../layouts/Project.astro
 title: "Toolbelt"
 description: "Drag and drop pomodoro productivity application."
 live: "https://toolbelt.netlify.app/"
-githubUrl: "https://github.com/whoadoo/toolbelt"
+githubUrl: "https://github.com/whoadood/toolbelt"
 image:
   {
     url: "https://user-images.githubusercontent.com/82413454/201543799-da68af16-5835-4624-87f1-5dbdb9ede7c9.png",

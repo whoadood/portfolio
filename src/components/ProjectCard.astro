@@ -1,5 +1,5 @@
 ---
-import type { MarkdownInstance, MarkdownLayoutProps } from "astro";
+import type { MarkdownInstance } from 'astro'
 import type { Frontmatter } from "../types";
 type Props = { project: MarkdownInstance<Frontmatter> };
 const { project } = Astro.props;
@@ -26,7 +26,7 @@ const { project } = Astro.props;
         >View Live</a
       >
       <a
-        href={project.url}
+        href={project.frontmatter.githubUrl}
         aria-label={`learn more about ${project.frontmatter.title}`}
         class="border-violet-900 border-2 hover:bg-violet-300 cursor-pointer text-violet-900 p-2 rounded text-md shadow"
         >Learn More</a

@@ -3,7 +3,7 @@ layout: ../../layouts/Project.astro
 title: "Slicewars"
 description: "Vote on your favorite local pizza shops"
 live: "https://slicewars.vercel.app/"
-githubUrl: "https://github.com/whoadoo/slicewars"
+githubUrl: "https://github.com/whoadood/slicewars"
 image:
   {
     url: "https://user-images.githubusercontent.com/82413454/201543802-b8f063d8-cf8f-401c-92af-1b1bb377efa7.png",

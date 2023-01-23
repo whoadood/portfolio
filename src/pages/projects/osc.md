@@ -3,7 +3,7 @@ layout: ../../layouts/Project.astro
 title: "Open Stick Community - Product Page"
 description: "Produce page for the Open Stick community."
 live: "https://osc-pp.netlify.app"
-githubUrl: "https://github.com/whoadoo/osc-pp"
+githubUrl: "https://github.com/whoadood/osc-pp"
 image:
   {
     url: "https://user-images.githubusercontent.com/82413454/212570091-062cf851-069a-4483-a810-f00aa081550a.png",
